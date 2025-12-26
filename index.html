@@ -2,67 +2,354 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Your Name | Software Engineer</title>
+  <title>Aarti Vijay Nagwanshi | Senior Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Resume of Aarti Vijay Nagwanshi, Senior Software Engineer in Pune with 15 years of experience in .NET, cloud, and full-stack development." />
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 2rem; max-width: 900px; line-height: 1.6; }
-    h1, h2 { margin-bottom: 0.2rem; }
-    h1 { font-size: 2rem; }
-    h2 { margin-top: 2rem; }
-    .muted { color: #555; }
-    .section { margin-top: 1.5rem; }
-    ul { padding-left: 1.2rem; }
-    .pill { display: inline-block; padding: 0.15rem 0.5rem; margin: 0.15rem; border-radius: 999px; background:#f1f3f5; font-size: 0.85rem; }
+    :root {
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    header {
+      background: var(--card-bg);
+      border-radius: 0.75rem;
+      padding: 1.75rem 2rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+    .subtitle {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .contact {
+      margin-top: 0.9rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 0.8rem;
+      margin-left: 0.4rem;
+    }
+
+    main {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.25fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 0.75rem;
+      padding: 1.5rem 1.75rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+      margin-bottom: 1rem;
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+    }
+    .pill {
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: #f3f4f6;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    .job {
+      margin-bottom: 1.1rem;
+    }
+    .job:last-child {
+      margin-bottom: 0;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .job-title {
+      font-weight: 600;
+    }
+    .job-company {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .job-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    ul {
+      margin: 0.35rem 0 0.1rem;
+      padding-left: 1.25rem;
+      font-size: 0.92rem;
+    }
+    li { margin-bottom: 0.25rem; }
+
+    .two-col-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.4rem 1.25rem;
+      padding-left: 0;
+      list-style: none;
+      font-size: 0.9rem;
+    }
+    .two-col-list li::before {
+      content: "• ";
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <div class="muted">Software Engineer • Maharashtra, India • email@domain.com • linkedin.com/in/you • github.com/you</div>
+  <div class="page">
+    <header>
+      <h1>Aarti Vijay Nagwanshi</h1>
+      <div class="subtitle">
+        Senior Software Engineer &nbsp;|&nbsp; 15+ years experience in .NET, cloud, and full‑stack development
+      </div>
+      <div class="contact">
+        📍 Pune, Maharashtra, India &nbsp;|&nbsp;
+        📞 8007431521 &nbsp;|&nbsp;
+        ✉️ <a href="mailto:aartiveejay@gmail.com">aartiveejay@gmail.com</a> &nbsp;|&nbsp;
+        🔗 <a href="https://www.linkedin.com/in/rt2020" target="_blank" rel="noopener noreferrer">linkedin.com/in/rt2020</a>
+        <span class="badge">Open to opportunities</span>
+      </div>
+    </header>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>Software engineer (10+ years) experienced in .NET, AWS, and full‑stack web development, focused on building scalable, cloud‑native solutions.</p>
-  </div>
+    <main>
+      <!-- Left column -->
+      <div>
+        <section id="summary">
+          <h2>Professional Summary</h2>
+          <p>
+            Results-driven senior software engineer with 15 years of experience in software design, development, and implementation across enterprise environments.[file:73]
+            Strong background in building scalable, high-performance systems, leading cross-functional teams, and delivering quality solutions using Microsoft and cloud technologies.[file:73]
+          </p>
+          <p>
+            Skilled in full-stack development, architecture design, agile methodologies, and mentoring engineers, with hands-on expertise in ASP.NET, SQL Server, and modern DevOps practices.[file:73]
+          </p>
+        </section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <div>
-      <span class="pill">C# / ASP.NET</span>
-      <span class="pill">Python</span>
-      <span class="pill">JavaScript / Angular</span>
-      <span class="pill">SQL</span>
-      <span class="pill">AWS (EC2, Lambda, IAM)</span>
-      <span class="pill">Git & GitHub</span>
-      <span class="pill">REST APIs</span>
-    </div>
-  </div>
+        <section id="experience">
+          <h2>Professional Experience</h2>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <h3>Senior Software Engineer – Company Name</h3>
-    <div class="muted">Month YYYY – Present</div>
-    <ul>
-      <li>Designed and implemented ASP.NET and AWS-based applications for banking/finance clients.</li>
-      <li>Led incident RCA and performance tuning using AWS Performance Insights and logging.</li>
-      <li>Improved CI/CD and Git workflows to streamline deployments and code reviews.</li>
-    </ul>
-    <!-- Add more roles similarly -->
-  </div>
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Dot Net Developer</div>
+                <div class="job-company">Barclays, Pune</div>
+              </div>
+              <div class="job-meta">Mar 2022 – Present · Pune, Maharashtra</div>
+            </div>
+            <ul>
+              <li>Lead cloud deployments for UAT and production releases using DevOps automation and AWS cloud services.[file:73]</li>
+              <li>Deliver user stories through requirement analysis, technical design, and implementation using ASP.NET, SQL Server, and Crystal Reports.[file:73]</li>
+              <li>Collaborate with stakeholders to define project requirements, scope, and deliverables for critical business applications.[file:73]</li>
+              <li>Mentor junior developers and conduct regular code reviews to maintain code quality and best practices.[file:73]</li>
+            </ul>
+          </div>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Project Name</strong> – Short description, tech stack (C#, Angular, AWS). <a href="https://github.com/you/project">Code</a></li>
-      <li><strong>AI Tools Automation</strong> – Scripts to integrate AI assistants into dev workflow (Python, APIs). <a href="https://github.com/you/project2">Code</a></li>
-    </ul>
-  </div>
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Senior Consultant</div>
+                <div class="job-company">Capgemini, Pune</div>
+              </div>
+              <div class="job-meta">May 2012 – Aug 2014 · Pune, Maharashtra</div>
+            </div>
+            <ul>
+              <li>Developed Nomura-branded CMIS web tools using Visual Studio, ASP.NET, and C#, replacing Excel with centralized, self-service interfaces.[file:73]</li>
+              <li>Optimized code and ensured SVN compliance with IT guidelines for mortgage retail banking projects.[file:73]</li>
+              <li>Supported client interactions and helped build teams for Barclays mortgage projects using the Microsoft technology stack.[file:73]</li>
+            </ul>
+          </div>
 
-  <div class="section">
-    <h2>Education & Certifications</h2>
-    <ul>
-      <li>AWS Cloud Practitioner Certification – Year</li>
-      <li>Relevant degree or coursework (e.g., Computer Science, etc.)</li>
-    </ul>
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Previous Roles</div>
+                <div class="job-company">IBM, Synechron & other organizations</div>
+              </div>
+            </div>
+            <ul>
+              <li>Sr. System Engineer, IBM · Jul 2009 – Aug 2011 · Pune, Maharashtra.[file:73]</li>
+              <li>Sr. Associate Software, Synechron Technologies · Dec 2005 – Mar 2009 · Pune, Maharashtra.[file:73]</li>
+              <li>Additional roles at Teamware Technologies, Patni Computer, Modular InfoTech, Silicon Technology, Parvati Shankar Bank, and Swami Samarth Spinning Mill in software and IT functions.[file:73]</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="career-breaks">
+          <h2>Career Breaks</h2>
+          <ul>
+            <li>Sep 2017 – Apr 2022: Focused on personal growth, wellbeing, and family commitments.[file:73]</li>
+            <li>Sep 2014 – Mar 2017: Career break for personal growth and family responsibilities.[file:73]</li>
+            <li>Additional shorter breaks taken for personal development and family needs.[file:73]</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Right column -->
+      <div>
+        <section id="core-skills">
+          <h2>Core Skills</h2>
+          <div class="pill-group">
+            <span class="pill">Software Architecture</span>
+            <span class="pill">Full-Stack Development</span>
+            <span class="pill">API Design</span>
+            <span class="pill">Agile & Scrum</span>
+            <span class="pill">Cloud Technologies</span>
+            <span class="pill">Microservices</span>
+            <span class="pill">Team Leadership</span>
+            <span class="pill">DevOps</span>
+            <span class="pill">Database Management</span>
+            <span class="pill">Performance Optimization</span>
+          </div>
+        </section>
+
+        <section id="tech-stack">
+          <h2>Technical Tools</h2>
+
+          <h3 class="small">Cloud & DevOps</h3>
+          <ul class="two-col-list">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>Jenkins</li>
+            <li>Docker</li>
+            <li>Containerization</li>
+            <li>Kubernetes</li>
+            <li>Git / GitHub / GitLab</li>
+            <li>Python</li>
+          </ul>
+
+          <h3 class="small">Programming & Frameworks</h3>
+          <ul class="two-col-list">
+            <li>C#, VB.NET, .NET 4.6</li>
+            <li>Visual Studio 2005/2008/2017</li>
+            <li>Visual Basic 6.0</li>
+            <li>ADO.NET, LINQ, T‑SQL</li>
+            <li>MVC, Web API</li>
+            <li>Angular 5 / Angular 8</li>
+          </ul>
+
+          <h3 class="small">Databases</h3>
+          <ul class="two-col-list">
+            <li>SQL Server 2000/2005/2010/2012</li>
+            <li>Oracle 8/9</li>
+            <li>Developer/2000 (Forms, Reports)</li>
+            <li>SQL*Plus, PL/SQL</li>
+            <li>MS Access</li>
+          </ul>
+
+          <h3 class="small">Web & Management</h3>
+          <ul class="two-col-list">
+            <li>ASP.NET, HTML, JavaScript, VBScript</li>
+            <li>WCF, Web Services, XML</li>
+            <li>JIRA, Confluence, TFS</li>
+            <li>Visual SourceSafe, ClearCase, TortoiseSVN</li>
+            <li>Agile, Scrum, Kanban</li>
+          </ul>
+
+          <h3 class="small">Operating Systems</h3>
+          <ul class="two-col-list">
+            <li>Windows</li>
+            <li>MS-DOS</li>
+          </ul>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li><strong>Bachelor of Commerce</strong> – Shivaji University, Maharashtra · 1999.[file:73]</li>
+            <li><strong>Higher Diploma in Software Engineering (HDSE)</strong> – Aptech Computer Education · Feb 2000.[file:73]</li>
+            <li><strong>PGDBA + MBA</strong> – MIT Distance Education · Jul 2013.[file:73]</li>
+            <li><strong>PGDITM (Sem 1)</strong> – Symbiosis University · Dec 2015.[file:73]</li>
+          </ul>
+        </section>
+
+        <section id="certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li>AWS Certified Cloud Practitioner (CLF‑C02) – Amazon · Jan 2025.[file:73]</li>
+            <li>AWS DevOps Engineer Certification – Edureka · Aug 2021.[file:73]</li>
+            <li>Angular 8 – Udemy Online Course · Apr 2018.[file:73]</li>
+            <li>Microsoft Certified Professional – .NET Framework · 2008.[file:73]</li>
+            <li>Microsoft SQL Server – Microsoft · 2006.[file:73]</li>
+            <li>Dot Net Modular Course – Seed Infotech · Jan 2006.[file:73]</li>
+          </ul>
+        </section>
+
+        <section id="additional">
+          <h2>Additional Information</h2>
+          <p class="small">
+            <strong>Languages:</strong> English (Fluent), Hindi (Fluent), Marathi (Fluent).[file:73]
+          </p>
+          <p class="small">
+            <strong>Awards:</strong> IBM Project Excellence Award for proactive project contribution · 2010.[file:73]
+          </p>
+        </section>
+      </div>
+    </main>
   </div>
 </body>
 </html>
